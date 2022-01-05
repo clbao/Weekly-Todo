@@ -1,38 +1,313 @@
-.App {
-  text-align: center;
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@400;800&family=Montserrat:wght@900&family=Pacifico&display=swap');
+
+html, body{
+    overflow: auto;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: rgb(130,163,161);
+    background: linear-gradient(to top, 
+        rgba(130,163,161,1) 0%, 
+        rgba(159,196,144,1) 68%, 
+        rgba(192,223,161,1) 100%);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 { 
+    font-size: 80px;   
+    font-family: 'Pacifico', cursive;
+    text-transform: capitalize;
+    color: rgb(36, 54, 76);
+    text-shadow: -2px 2px 0 #e0efd1;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h2 {
+    font-size: 50px;   
+    font-family: 'Pacifico', cursive;
+    text-transform: capitalize;
+    color: rgb(192, 223, 161);
+    text-shadow: -2px 2px 0 #011936; 
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+h3 {
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    color: #e0efd1;
 }
 
-.App-link {
-  color: #61dafb;
+h4 {
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+h5 {
+    font-weight: 800;
+    font-size: 22px;
+    font-family: 'Merriweather Sans', sans-serif;
+    text-transform: capitalize;
+    color: #011936;
+}
+
+h6 {
+    font-size: 18px;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+p {    
+    font-size: 15px;
+    font-family: 'Merriweather Sans', sans-serif;
+    color: #011936;
+}
+
+div.justified {
+    position: relative;
+    display: flex;
+    justify-content: center;  
+}
+
+.rowBack {
+    height: 100%
+}
+
+/* WorkSpace */
+.weekRow {
+    width: 1400px;
+}
+
+.monthTitleBox{
+    text-align: center; 
+    padding-top: 20ch;
+    padding-bottom: 5ch;
+}
+
+.titleBox{
+    text-align: center; 
+    padding-top: 20ch;
+    padding-bottom: 5ch;
+}
+
+.weekTodo {    
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.dayTitle {
+    border-radius: 15px 15px 0px 0px; 
+    text-align: center;
+    opacity: 0.45;
+    background-color: #E0EFD1;
+    padding: 3px;
+    padding-bottom: 10px; 
+}
+
+.agenda {
+    overflow: auto;
+    display: flex;
+    margin-right: 0;
+    width: 400px;
+    height: 100vh;
+    flex-direction: column;
+    background: rgb(1,25,54);
+    background: linear-gradient(0deg, 
+        rgba(1,25,54,1) 0%, 
+        rgba(70,83,98,1) 77%);
+
+    text-align: center;
+}
+
+.addTask {    
+    max-width: 100px;
+    background-color: lightseagreen;
+}
+
+/* Tasks */
+.taskBox {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.taskIcons {
+    display: flex;
+    flex-direction: row;
+    padding-left: 110px;
+    padding-bottom: 5px;
+    margin: auto;  
+}
+
+.iconSpace {
+    margin-right: 5px;
+}
+
+.editButton {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: #68a1b3;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.deleteButton {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: #b63838;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+
+.taskDivider {
+    margin-top: 0;
+    margin-bottom: 5px;
+    border: 4px;
+    width: 100%;
+    color: #011936;
+}
+
+/* Add Task */
+.addButtonBorder {
+    padding-top: 25px;
+    padding-left: 100px;
+}
+
+.test {
+    margin: auto;
+}
+
+.formBackground {
+    border: 4px solid #24364c;
+    background: linear-gradient(to top, 
+        rgba(130,163,161,1) 0%, 
+        rgba(159,196,144,1) 30%, 
+        rgba(224,239,161,1) 100%);
+}
+
+.formGroup {
+    padding: 1ch;
+}
+
+/* Daily Tasks */
+.dailyCol {
+    position:relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.dailyBox {
+    margin-top: 5ch;
+    padding: 4ch;
+    width: 100%;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+.dailyTasksBox {
+    margin-top: 5ch;
+    padding: 1ch;
+    width: 100%;
+    flex-grow: 1;
+    border-radius: 30px 5px 5px 5px; 
+    border: 4px solid #c0dfa1;
+    background: rgb(192,223,161);
+    background: linear-gradient(0deg, 
+        rgba(192,223,161,1) 33%, 
+        rgba(224,239,209,1) 80%);
+    box-shadow: -10px 10px #82a3a1
+}
+
+.dailyTask {
+    display: flex;
+    flex-direction: row;
+    width: 250px;
+    min-height: 40px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 5px 30px 30px 5px; 
+    border: 2px solid darkgray;
+    background: #ffffff;
+    opacity: 0.75;
+    padding: 5px;
+}
+
+.dailyCheck{
+    cursor: pointer;
+    margin-top: auto;
+    margin-left: 5px;
+    margin-bottom: auto;
+    color: rgba(130,163,161,1);
+}
+
+.dailyTaskText {
+    margin-top: auto;
+    margin-left: 15px;
+    margin-bottom: auto;
+}
+
+/* NotePad */
+
+.testtest {
+    margin-top: -10ch;
+}
+.noteBox {
+    padding: 4ch;
+    width: 100%;
+    height: 400px;
+}
+
+.notesTitleBox{
+    text-align: center; 
+    padding-top: 1ch;
+    padding-bottom: 5ch;
+}
+
+.notePad {   
+    resize: none;
+    display: fixed;
+    width: 250px;
+    height: 250px;
+    padding: 1ch;
+    border-radius: 30px 5px 5px 5px; 
+    border: 4px solid #c0dfa1;
+    background: rgb(192,223,161);
+    background: linear-gradient(0deg, 
+        rgba(192,223,161,1) 33%, 
+        rgba(224,239,209,1) 80%);
+    box-shadow: -10px 10px #82a3a1;
+    white-space: pre-line;
+}
+
+.saveButton :hover{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: #24364c;
+    opacity: 1.0; 
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.saveButton {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    position: relative;
+    left: 220px;
+    top: 160px;
+    background-color: #9fc490;
+    opacity: 0.50;    
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
 }
