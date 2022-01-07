@@ -10,11 +10,11 @@ The scheduler saves added tasks and notes using the user's local storage. Users 
 
 This project features the following libraries:
 
-* [React Bootstrap] (https://react-bootstrap-v4.netlify.app/): v1.6.4
-* [Beautiful DnD] (https://github.com/atlassian/react-beautiful-dnd): v13.1.0
-* [Font Awesome] (https://fontawesome.com/): v5.15.4
-* [Styled Components] (https://styled-components.com/): v5.3.3
-* [@atlastkit/css-reset] (https://atlaskit.atlassian.com/packages/css-packs/css-reset): v6.3.4
+* [React Bootstrap] (https://react-bootstrap-v4.netlify.app/) : v1.6.4
+* [Beautiful DnD] (https://github.com/atlassian/react-beautiful-dnd) : v13.1.0
+* [Font Awesome] (https://fontawesome.com/) : v5.15.4
+* [Styled Components] (https://styled-components.com/) : v5.3.3
+* [@atlastkit/css-reset] (https://atlaskit.atlassian.com/packages/css-packs/css-reset) : v6.3.4
 
 ## Credits + Extra
 
