@@ -309,10 +309,12 @@ const App = () => {
 
             </Container>  
 
+          <div className='agendaBg'>           
             <Container className='agenda'>
                 <Notepad/>
                 <Daily currentTasks={currentTasks}/>
             </Container>         
+          </div>
 
         </Week>
     )

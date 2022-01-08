@@ -103,20 +103,22 @@ div.justified {
     padding-bottom: 10px; 
 }
 
-.agenda {
-    overflow: auto;
+.agendaBg {
     display: flex;
     margin-right: 0;
     margin-left: 2em;
     width: 400px;
-    height: 100vh;
+    min-height: 100vh;
     flex-direction: column;
-    background: rgb(1,25,54);
+    text-align: center;
+}
+
+.agenda {    
+    text-align: center;
     background: linear-gradient(0deg, 
         rgba(1,25,54,1) 0%, 
         rgba(70,83,98,1) 77%);
-
-    text-align: center;
+    flex-grow: 1;
 }
 
 .addTask {    
@@ -230,6 +232,7 @@ div.justified {
     min-height: 500px;
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
 }
 
 .dailyTasksBox {
