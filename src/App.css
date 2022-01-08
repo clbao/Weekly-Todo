@@ -73,7 +73,7 @@ div.justified {
 
 /* WorkSpace */
 .weekRow {
-    width: 1400px;
+    min-width: 1400px;
 }
 
 .monthTitleBox{
@@ -107,6 +107,7 @@ div.justified {
     overflow: auto;
     display: flex;
     margin-right: 0;
+    margin-left: 2em;
     width: 400px;
     height: 100vh;
     flex-direction: column;

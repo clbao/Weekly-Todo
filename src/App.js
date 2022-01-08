@@ -21,7 +21,7 @@ const Days = styled.div`
     border-radius: 30px 30px 5px 5px; 
     border: 4px solid #E0EFD1;
     min-height: 500px;
-    width: 300px;
+    min-width: 200px;
 
     display: flex;
     flex-direction: column;
@@ -35,6 +35,7 @@ const TaskList = styled.div`
 `;
 
 const App = () => {   
+
     // set initial tasksData and weekData       
     const [columns, setColumns] = useState([]);
     const [tasks, setTasks] = useState(null);
@@ -292,21 +293,18 @@ const App = () => {
 
                       <div className='aboutLinks' >
                         <a className='aboutIcon' href='https://github.com/clbao/Weekly-Todo' target="_blank">
-                          <i class="fa fa-2x fa-github"></i> 
+                          <i className="fa fa-2x fa-github"></i> 
                         </a>
 
                         <a className='aboutIcon' href='https://www.linkedin.com/in/clbao/' target="_blank">
-                          <i class="fa fa-2x fa-linkedin-square"></i>
+                          <i className="fa fa-2x fa-linkedin-square"></i>
                         </a>       
                           
                       </div>
                       
                     </div>
 
-                  </Col>
-                  
-
-                  
+                  </Col>            
                 </Row>
 
             </Container>  
