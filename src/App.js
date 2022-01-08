@@ -281,10 +281,33 @@ const App = () => {
                 </DragDropContext>   
                 </div> 
                 
-                <div>
-                  <AddTaskForm addTask={addTask} /> 
-                  <p> Made by Christine Bao</p>
-                </div>
+                <Row className='sample'>
+                  <Col>
+                    <AddTaskForm addTask={addTask} /> 
+                  </Col>
+
+                  <Col>
+                    <div className='aboutMe' >
+                      <b><p>Made by Christine Bao</p></b>
+
+                      <div className='aboutLinks' >
+                        <a className='aboutIcon' href='https://github.com/clbao/Weekly-Todo' target="_blank">
+                          <i class="fa fa-2x fa-github"></i> 
+                        </a>
+
+                        <a className='aboutIcon' href='https://www.linkedin.com/in/clbao/' target="_blank">
+                          <i class="fa fa-2x fa-linkedin-square"></i>
+                        </a>       
+                          
+                      </div>
+                      
+                    </div>
+
+                  </Col>
+                  
+
+                  
+                </Row>
 
             </Container>  
 

@@ -123,6 +123,27 @@ div.justified {
     background-color: lightseagreen;
 }
 
+/* Page Bottom */
+.aboutMe {
+    text-align: center;
+    margin-top: 25px;
+    margin-right: 100px;
+}
+
+.aboutLinks {
+    margin-top: 5px;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.aboutIcon {
+    color:#011936;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
 /* Tasks */
 .taskBox {
     width: 100%;
@@ -174,8 +195,8 @@ div.justified {
 
 /* Add Task */
 .addButtonBorder {
-    padding-top: 25px;
-    padding-left: 100px;
+    margin-top: 25px;
+    margin-left: 100px;
 }
 
 .test {
