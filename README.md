@@ -6,6 +6,8 @@ Weekly scheduler web app that allows you to keep track of upcoming tasks.
 
 The scheduler saves added tasks and notes using the user's local storage. Users are able to edit and delete existing tasks. To reschedule simply drag and drop the task into another day. The app also features a list of daily tasks for the day and a notes section. 
 
+Note: This web app is currently for desktop only.
+
 ## Technologies
 
 This project features the following libraries:
