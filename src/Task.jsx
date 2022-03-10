@@ -52,12 +52,7 @@ const Task = (props) => {
                             <p>{props.task.taskDescription}</p>
                         </div>
 
-
-
-                    </div>                  
-
-
-                
+                    </div>                                  
                 </TaskContainer>
             )}            
         </Draggable>

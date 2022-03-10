@@ -6,6 +6,7 @@ import '@atlaskit/css-reset';
 import App from './App';
 
 ReactDOM.render(
+  // localStorage.clear(),
   <App />,
   document.getElementById('root')
 );

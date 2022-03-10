@@ -1,5 +1,5 @@
-import React, {useEffect, useState} from 'react';
-import { Row, Col, Container } from 'react-bootstrap'; 
+import React from 'react';
+import { Container } from 'react-bootstrap'; 
 
 const Daily = ({currentTasks}) => {  
     return (

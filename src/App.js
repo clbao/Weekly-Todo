@@ -35,8 +35,6 @@ const TaskList = styled.div`
 `;
 
 const App = () => {   
-    storage.clear();
-    
     // set initial tasksData and weekData       
     const [columns, setColumns] = useState([]);
     const [tasks, setTasks] = useState(null);
@@ -84,7 +82,14 @@ const App = () => {
 
     const addTask = (task, dueDate) => {
         // newTask data
-        const taskNum = Object.keys(tasks).length+1;
+        // loop through array of tasks to name new task properly
+        var taskNum = 1; //if there's no task
+        for (var key of Object.keys(tasks)){
+            var max = key.substring(5);
+            var taskNum = Number(max)+1;
+        }
+
+        // const taskNum = Object.keys(tasks).length+1;
         var newId = 'task-' + taskNum.toString(); 
 
         var newTask = {
