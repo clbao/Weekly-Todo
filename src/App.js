@@ -35,7 +35,8 @@ const TaskList = styled.div`
 `;
 
 const App = () => {   
-
+    storage.clear();
+    
     // set initial tasksData and weekData       
     const [columns, setColumns] = useState([]);
     const [tasks, setTasks] = useState(null);
